@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Complete project setup",
+    "description": "Initialize repository and set up project structure.",
+    "date": "2024-10-22",
+    "category": "todo"
+  },
+  {
+    "id": 2,
+    "title": "Design homepage layout",
+    "description": "Create a mockup for the homepage in Figma.",
+    "date": "2024-10-23",
+    "category": "ongoing"
+  },
+  {
+    "id": 3,
+    "title": "Develop login feature",
+    "description": "Implement login functionality with form validation.",
+    "date": "2024-10-24",
+    "category": "ongoing"
+  },
+  {
+    "id": 4,
+    "title": "Revise user profile UI",
+    "description": "Update profile page design to align with recent changes.",
+    "date": "2024-10-25",
+    "category": "revised"
+  },
+  {
+    "id": 5,
+    "title": "Finalize API documentation",
+    "description": "Complete API documentation for user authentication.",
+    "date": "2024-10-26",
+    "category": "complete"
+  },
+  {
+    "id": 6,
+    "title": "Code review for module A",
+    "description": "Review the code for module A to ensure it meets requirements.",
+    "date": "2024-10-27",
+    "category": "todo"
+  },
+  {
+    "id": 7,
+    "title": "Optimize database queries",
+    "description": "Identify and optimize slow queries in the database.",
+    "date": "2024-10-28",
+    "category": "ongoing"
+  },
+  {
+    "id": 8,
+    "title": "Write unit tests for services",
+    "description": "Add unit tests for all service layer functions.",
+    "date": "2024-10-29",
+    "category": "complete"
+  },
+  {
+    "id": 9,
+    "title": "Review and revise requirements",
+    "description": "Conduct a review meeting to clarify project requirements.",
+    "date": "2024-10-30",
+    "category": "revised"
+  },
+  {
+    "id": 10,
+    "title": "Deploy to staging environment",
+    "description": "Deploy the application to the staging server for testing.",
+    "date": "2024-10-31",
+    "category": "todo"
+  }
+]

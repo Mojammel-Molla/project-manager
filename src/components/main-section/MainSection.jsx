@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import CompleteProjects from './CompleteProjects';
 import Header from './Header';
 import OnGoingProjects from './OnGoingProjects';
@@ -6,15 +6,9 @@ import RevisedProjects from './RevisedProjects';
 import TodoProjects from './TodoProjects';
 import AddTodoModal from './AddTodoModal';
 import PlusIcon from '../../assets/plus.svg';
-import AllToDos from '../../../public/todo.json';
+
 const MainSection = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const toDos = AllToDos.filter(todo => todo.category === 'todo');
-  const onGoings = AllToDos.filter(todo => todo.category === 'ongoing');
-  const completes = AllToDos.filter(todo => todo.category === 'complete');
-  const revises = AllToDos.filter(todo => todo.category === 'revised');
-  console.log(toDos, onGoings, completes, revises);
 
   return (
     <div className="flex-1 overflow-y-auto overflow-x-hidden bg-gray-900 text-white relative">
@@ -48,7 +42,7 @@ const MainSection = () => {
           <RevisedProjects />
         </div>
       </div>
-      {isOpen && <AddTodoModal />}
+      {isOpen && <AddTodoModal setIsOpen={setIsOpen} />}
     </div>
   );
 };

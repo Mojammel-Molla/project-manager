@@ -1,11 +1,18 @@
 import DeleteIcon from '../../assets/delete.svg';
 import EditIcon from '../../assets/edit.svg';
-const TodoCard = () => {
+const TodoCard = ({ todo }) => {
   return (
     <div className="mb-4 rounded-lg bg-gray-800 p-4">
       <div className="flex justify-between">
-        <h4 className="mb-2 flex-1 font-semibold text-indigo-500">
-          Content Writer Content Writer Content Writer
+        <h4
+          className={`mb-2 flex-1 font-semibold ${
+            todo.category == 'todo' ? 'first-line:text-indigo-500' : ''
+          } ${todo.category == 'ongoing' ? 'first-line:text-yellow-500' : ''}
+          ${todo.category == 'complete' ? 'first-line:text-teal-500' : ''}
+            
+          ${todo.category == 'revised' ? 'first-line:text-rose-500' : ''}`}
+        >
+          {todo?.title}
         </h4>
 
         <div className="flex gap-2">
@@ -18,11 +25,9 @@ const TodoCard = () => {
           </button>
         </div>
       </div>
-      <p className="mb-2 text-sm text-zinc-200">
-        Prepare proctor for client meeting
-      </p>
+      <p className="mb-2 text-sm text-zinc-200">{todo?.description}</p>
 
-      <p className="mt-6 text-xs text-zinc-400">February 20, 2024</p>
+      <p className="mt-6 text-xs text-zinc-400">{todo?.date}</p>
     </div>
   );
 };

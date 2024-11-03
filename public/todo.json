@@ -8,7 +8,7 @@
   },
   {
     "id": 2,
-    "title": "Design homepage layout",
+    "title": "Design homepage ",
     "description": "Create a mockup for the homepage in Figma.",
     "date": "2024-10-23",
     "category": "ongoing"
@@ -29,42 +29,42 @@
   },
   {
     "id": 5,
-    "title": "Finalize API documentation",
+    "title": "Finalize API document",
     "description": "Complete API documentation for user authentication.",
     "date": "2024-10-26",
     "category": "complete"
   },
   {
     "id": 6,
-    "title": "Code review for module A",
+    "title": "Code review for module",
     "description": "Review the code for module A to ensure it meets requirements.",
     "date": "2024-10-27",
     "category": "todo"
   },
   {
     "id": 7,
-    "title": "Optimize database queries",
+    "title": "Optimize database ",
     "description": "Identify and optimize slow queries in the database.",
     "date": "2024-10-28",
     "category": "ongoing"
   },
   {
     "id": 8,
-    "title": "Write unit tests for services",
+    "title": "Write unit tests ",
     "description": "Add unit tests for all service layer functions.",
     "date": "2024-10-29",
     "category": "complete"
   },
   {
     "id": 9,
-    "title": "Review and revise requirements",
+    "title": "Review and revise ",
     "description": "Conduct a review meeting to clarify project requirements.",
     "date": "2024-10-30",
     "category": "revised"
   },
   {
     "id": 10,
-    "title": "Deploy to staging environment",
+    "title": "Deploy to staging ",
     "description": "Deploy the application to the staging server for testing.",
     "date": "2024-10-31",
     "category": "todo"

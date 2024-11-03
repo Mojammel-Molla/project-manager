@@ -4,13 +4,12 @@ import { useContext, useState } from 'react';
 import { TaskContext } from '../../context';
 const OnGoingProjects = () => {
   const { allTodos } = useContext(TaskContext);
-  const initialTodos = allTodos.filter(todo => todo.category === 'ongoing');
-  const [onGoings, setOnGoings] = useState(initialTodos);
+  const onGoings = allTodos.filter(todo => todo.category === 'ongoing');
+
   const handleSort = () => {
     const sortedTodos = [...onGoings].sort(
       (a, b) => new Date(b.date) - new Date(a.date)
     );
-    setOnGoings(sortedTodos);
   };
   return (
     <div className="mb-4 w-full px-2 sm:w-1/2 md:w-1/4">

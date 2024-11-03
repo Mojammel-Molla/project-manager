@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import CompleteProjects from './CompleteProjects';
 import Header from './Header';
 import OnGoingProjects from './OnGoingProjects';
@@ -6,8 +6,9 @@ import RevisedProjects from './RevisedProjects';
 import TodoProjects from './TodoProjects';
 import AddTodoModal from './AddTodoModal';
 import PlusIcon from '../../assets/plus.svg';
+import UpdateTodoModal from './UpdateTodoModal';
 
-const MainSection = () => {
+const MainSection = ({ updateModal }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -43,6 +44,7 @@ const MainSection = () => {
         </div>
       </div>
       {isOpen && <AddTodoModal setIsOpen={setIsOpen} />}
+      {updateModal && <UpdateTodoModal />}
     </div>
   );
 };

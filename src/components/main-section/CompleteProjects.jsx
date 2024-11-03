@@ -4,15 +4,12 @@ import TodoCard from './TodoCard';
 import { TaskContext } from '../../context';
 const CompleteProjects = () => {
   const { allTodos } = useContext(TaskContext);
-  const initialTodos = allTodos.filter(todo => todo.category === 'complete');
-
-  const [completeTodos, setCompleteTodos] = useState(initialTodos);
+  const completeTodos = allTodos.filter(todo => todo.category === 'complete');
 
   const handleSort = () => {
     const sortedTodos = [...completeTodos].sort(
       (a, b) => new Date(b.date) - new Date(a.date)
     );
-    setCompleteTodos(sortedTodos);
   };
   return (
     <div className="mb-4 w-full px-2 sm:w-1/2 md:w-1/4">
